@@ -333,13 +333,3 @@ output policyDefinitionIds object = deployPolicyDefinitions ? {
   requireInternetFailback: policyRequireInternetFailback!.outputs.policyDefinitionId
   deployDnsZoneGroup: policyDeployDnsZoneGroup!.outputs.policyDefinitionId
 } : existingPolicyDefinitionIds
-
-// Parameters file example output
-output sampleParameters object = {
-  deployPolicyDefinitions: {
-    value: deployPolicyDefinitions
-  }
-  existingPolicyDefinitionIds: {
-    value: existingPolicyDefinitionIds
-  }
-}
